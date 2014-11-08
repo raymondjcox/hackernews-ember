@@ -1,0 +1,9 @@
+<table class='table table-striped'>
+<tbody>
+{{#each post in controller}}
+<tr><td><h4><a {{bind-attr href=post.url}}>{{post.title}}</a></h4>
+{{post.score}} points by {{post.by}} | {{link-to 'comments' 'posts.comments' post.id}} ({{post.numComments}})</tr>
+{{/each}}
+</tbody>
+</table>
+
