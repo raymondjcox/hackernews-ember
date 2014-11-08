@@ -2,7 +2,13 @@
 <tbody>
 {{#each post in controller}}
 <tr><td><h4><a {{bind-attr href=post.url}}>{{post.title}}</a></h4>
-{{post.score}} points by {{post.by}} | {{link-to 'comments' 'posts.comments' post.id}} ({{post.numComments}})</tr>
+{{post.score}} points by {{post.by}}&nbsp;|&nbsp;
+{{#if post.hasComment}}
+  {{link-to 'comments' 'posts.comments' post.id}}</tr>
+{{else}}
+  comments
+{{/if}}
+({{post.numComments}})</tr>
 {{/each}}
 </tbody>
 </table>

@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.ArrayController.extend({
-  itemController: 'post'
+  itemController: 'posts/post'
 });
 
