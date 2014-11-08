@@ -23,7 +23,7 @@ module.exports = function(environment) {
     'default-src': "'none'",
     'script-src': "'self' 'unsafe-eval'",
     'font-src': "'self' http://fonts.gstatic.com",
-    'connect-src': "'self' 'hacker-news.firebaseio.com'",
+    'connect-src': "'self' https://hacker-news.firebaseio.com",
     'img-src': "'self'",
     'style-src': "'self' http://fonts.googleapis.com",
     'media-src': "'self'"
