@@ -4,11 +4,11 @@
 <tr><td><h4><a {{bind-attr href=post.url}}>{{post.title}}</a></h4>
 {{post.score}} points by {{post.by}}&nbsp;|&nbsp;
 {{#if post.hasComment}}
-  {{link-to 'comments' 'posts.comments' post.id}}</tr>
+  {{link-to 'comments' 'posts.comments' post.id}}
 {{else}}
   comments
 {{/if}}
-({{post.numComments}})</tr>
+({{post.numComments}})</td></tr>
 {{/each}}
 </tbody>
 </table>
