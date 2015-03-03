@@ -2,8 +2,8 @@
 <table class='table table-striped'>
 <thead><th><h4><a {{bind-attr href=post.url}}>{{post.title}}</a></h4></th></thead>
 <tbody>
-{{#each model}}
-<tr><td>{{{text}}}</td></tr>
+{{#each item in model}}
+<tr><td>{{item.text}}</td></tr>
 {{/each}}
 </tbody>
 </table>
