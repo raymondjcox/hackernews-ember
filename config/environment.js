@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'hacker-news-ember',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
+    firebase: 'https://hacker-news.firebaseio.com/v0',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -17,16 +19,6 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     }
-  };
-
-  ENV.contentSecurityPolicy = {
-    'default-src': "'none'",
-    'script-src': "'self' 'unsafe-eval'",
-    'font-src': "'self' http://fonts.gstatic.com",
-    'connect-src': "'self' https://hacker-news.firebaseio.com",
-    'img-src': "'self'",
-    'style-src': "'self' http://fonts.googleapis.com",
-    'media-src': "'self'"
   };
 
   if (environment === 'development') {

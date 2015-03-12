@@ -1,10 +1,11 @@
 <table class='table table-striped'>
 <tbody>
-{{#each post in model}}
+{{#each limitedTopStories as |topStory|}}
   <tr><td>
-  {{news-post post=post}}
+  {{news-post post=topStory.item}}
   </td></tr>
 {{/each}}
 </tbody>
 </table>
 
+{{infinite-scroll infiniteScroll="infiniteScroll"}}
