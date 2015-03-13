@@ -1,3 +1,6 @@
+{{#if isNil}}
+LOADING...
+{{else}}
 <h4><a {{bind-attr href=post.url}}>{{post.title}}</a></h4>
 {{post.score}} points by {{post.by}}&nbsp;|&nbsp;
 {{#if hasComment}}
@@ -6,3 +9,5 @@
   comments
 {{/if}}
 ({{numComments}})
+
+{{/if}}
