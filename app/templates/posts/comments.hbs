@@ -3,7 +3,7 @@
 <thead><th><h4><a {{bind-attr href=post.url}}>{{post.title}}</a></h4></th></thead>
 <tbody>
 {{#each item in model}}
-<tr><td>{{item.text}}</td></tr>
+<tr><td>{{{item.text}}}</td></tr>
 {{/each}}
 </tbody>
 </table>
