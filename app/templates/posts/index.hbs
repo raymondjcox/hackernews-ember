@@ -1,9 +1,7 @@
 <table class='table table-striped'>
 <tbody>
 {{#each limitedTopStories as |topStory|}}
-  <tr><td>
-  {{news-post post=topStory.item}}
-  </td></tr>
+  <tr><td>{{news-post post=topStory.item}}</td></tr>
 {{/each}}
 </tbody>
 </table>
