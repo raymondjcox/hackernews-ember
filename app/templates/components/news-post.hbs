@@ -1,7 +1,7 @@
 {{#if isNil}}
 LOADING...
 {{else}}
-<h4><a {{bind-attr href=post.url}}>{{post.title}}</a></h4>
+<h4><a href={{post.url}}>{{post.title}}</a></h4>
 {{post.score}} points by {{post.by}}&nbsp;|&nbsp;
 {{#if hasComment}}
   {{link-to 'comments' 'posts.comments' post.id}}
